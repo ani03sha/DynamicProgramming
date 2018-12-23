@@ -16,10 +16,8 @@ public class FibonacciSequence {
 
     public static void main(String[] args) {
 
-        try {
-
-            // Getting the instance of BufferedReader
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        // Try-With-Resource block with BufferedReader instance
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))) {
 
             // Getting the number of test cases
             int testCases = Integer.parseInt(bufferedReader.readLine());
