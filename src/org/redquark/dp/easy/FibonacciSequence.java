@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 /**
  * @author Anirudh Sharma
- *
+ * <p>
  * This class calculates the Nth Fibonacci term
  */
 public class FibonacciSequence {
@@ -51,13 +51,14 @@ public class FibonacciSequence {
     private static void init(long[] lookup, int n) {
 
         // Filling the lookup array
-        for (int i = 0; i < n+1; i++) {
+        for (int i = 0; i < n + 1; i++) {
             lookup[i] = -1;
         }
     }
 
     /**
      * Memoization - Top down approach
+     *
      * @param n - Nth term to be calculated
      * @return long
      */
@@ -82,6 +83,7 @@ public class FibonacciSequence {
 
     /**
      * Tabulation - Bottom up approach
+     *
      * @param n - Nth term to be calculated
      * @return long
      */
